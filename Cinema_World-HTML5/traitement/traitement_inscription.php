@@ -12,14 +12,13 @@ else{
 
 
 
-  $abcd = new inscription($_POST);
+  $inscription = new inscription("mail"=>$_POST['mail'],"mdp"=>$_POST['mdp'],"num"=>$_POST['num']);
   $manager_inscription = new manager_inscription();
-  $manager_inscription->inscription($abcd);
+  $manager_inscription->inscription($inscription);
+
 
 		 }
   echo "bravo vous etes inscrit";
-
-
 
 
 

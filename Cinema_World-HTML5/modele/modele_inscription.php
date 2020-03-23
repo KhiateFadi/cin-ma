@@ -8,19 +8,20 @@ class inscription{
   private $_num;
 
 
-public function __construct($donnee){
-  $this->hydrate($donnee);
+  public function __construct($donnee){
+    $this->hydrate($donnee);
 
-  }
+    }
 
-  public function hydrate($donnee){
-    foreach($donnee as $key => $value){
-      $method = 'set'.ucfirst($key);
-      if(method_exists($this,$method)){
-        $this->$method($value);
+    public function hydrate($donnee){
+      foreach($donnee as $key => $value){
+        $method = 'set'.ucfirst($key);
+        if(method_exists($this,$method)){
+          $this->$method($value);
+        }
       }
     }
-  }
+
 
   public function setMail($mail){
   if(empty($mail)){
