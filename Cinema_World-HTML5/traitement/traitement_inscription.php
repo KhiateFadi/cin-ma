@@ -25,4 +25,4 @@ else{
 
 
 ?>
-	<a href="index.html">Accueil</a>
+	<a href="../index.html">Accueil</a>
