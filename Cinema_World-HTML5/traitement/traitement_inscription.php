@@ -1,7 +1,6 @@
 <?php
 
 
-
 require_once('../modele/modele_inscription.php');
 require_once('../manager/manager_inscription.php');
 if(empty($_POST['mail']) or (empty($_POST['mdp'])) or (empty($_POST['num']))){
@@ -12,7 +11,7 @@ else{
 
 
 
-  $inscription = new inscription("mail"=>$_POST['mail'],"mdp"=>$_POST['mdp'],"num"=>$_POST['num']);
+  $inscription = new inscription('mail'=>$_POST['mail'],'mdp'=>$_POST['mdp'],'num'=>$_POST['num']);
   $manager_inscription = new manager_inscription();
   $manager_inscription->inscription($inscription);
 
