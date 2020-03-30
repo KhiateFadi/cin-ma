@@ -12,7 +12,7 @@ else{
 
 
 
-  $inscription = new inscription("mail"=>$_POST['mail'],"mdp"=>$_POST['mdp'],"num"=>$_POST['num']);
+  $inscription = new inscription($_POST['mail'],$_POST['mdp'],$_POST['num']);
   $manager_inscription = new manager_inscription();
   $manager_inscription->inscription($inscription);
 
