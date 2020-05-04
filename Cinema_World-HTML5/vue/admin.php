@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-    require('manager/connexion_manager.php');
+  
 ?>
 
 <!DOCTYPE html>
