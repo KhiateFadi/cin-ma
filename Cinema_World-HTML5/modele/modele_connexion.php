@@ -1,4 +1,5 @@
 <?php
+
 class connexion{
   private $_mail;
   private $_mdp;
