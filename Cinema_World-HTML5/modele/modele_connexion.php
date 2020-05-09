@@ -1,24 +1,42 @@
 <?php
-require('../manager/manager_connexion.php');
-Class connexion{
+class connexion{
+  private $_mail;
+  private $_mdp;
 
-    private $mail;
-    private $mdp;
-
-    public function __construct($mail, $mdp){
-        $this->setMail($mail);
-        $this->setMdp($mdp);
-    }
-
-    public function getMail(){ return $this->mail; }
-    public function getMdp(){ return $this->mdp; }
-
-    public function setMail($mail){
-        $this->mail = $mail;
-    }
-
-    public function setMdp($mdp){
-        $this->mdp = sha1($mdp);
-    }
-
+public function __construct($mail,$mdp){
+  $this->setMail($mail);
+  $this->setMdp($mdp);
 }
+
+public function setMail($mail){
+  //if(is_string ($nom)){
+$this->_mail = $mail ;
+  //}
+//else {
+  //echo"t nul";
+//}
+}
+
+
+public function setMdp($mdp){
+//  if(is_int ($tel)){
+$this->_mdp = $mdp;
+  //}
+////echo"t nul";
+//}
+}
+
+public function getMail(){
+  return $this->_mail;
+}
+
+
+public function getMdp(){
+  return $this->_mdp;
+}
+}
+
+
+
+
+ ?>
