@@ -1,5 +1,15 @@
 <?php
+<<<<<<< HEAD
 //session_start();
+=======
+
+session_start();
+
+
+require_once('../modele/modele_connexion.php');
+require_once('../traitement/traitement_connexion.php');
+
+>>>>>>> 19c9a922dd1bcf974935d49b5c53c2db9d32013c
 
 Class Manager{
 
@@ -21,6 +31,12 @@ header('location: ../vue/admin.php');
          header('location: ../vue/moncompte.html');
      }
  }
+<<<<<<< HEAD
+=======
+
+  
+
+>>>>>>> 19c9a922dd1bcf974935d49b5c53c2db9d32013c
 
 
 
@@ -28,13 +44,19 @@ header('location: ../vue/admin.php');
   public function afficheUser($id){
   $bdd = new PDO('mysql:host=localhost;dbname=cinema;charset=utf8','root','');
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 19c9a922dd1bcf974935d49b5c53c2db9d32013c
 
 $red = $bdd->prepare('SELECT * FROM utilisateurs WHERE id=:id');
 $red->execute(array('id'=>$_SESSION['id']));
 $c = $red->fetch();
     return $c;
+}
 
-  }
   public function admin($all){
   $bdd = new PDO('mysql:host=localhost;dbname=cinema;charset=utf8','root','');
 
