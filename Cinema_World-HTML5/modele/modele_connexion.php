@@ -1,8 +1,5 @@
 <?php
-<<<<<<< HEAD
-=======
 
->>>>>>> 19c9a922dd1bcf974935d49b5c53c2db9d32013c
 class connexion{
   private $_mail;
   private $_mdp;
@@ -31,13 +28,8 @@ $this->_mdp = $mdp;
 }
 
 public function getMail(){
-  return $this->_Mail;
+  return $this->_mail;
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 19c9a922dd1bcf974935d49b5c53c2db9d32013c
 public function getMdp(){
   return $this->_mdp;
 }
