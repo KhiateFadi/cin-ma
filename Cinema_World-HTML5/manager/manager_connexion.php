@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+require_once('../modele/modele_connexion.php');
 require_once('../traitement/traitement_connexion.php');
 
 Class manager_connexion{
@@ -13,6 +14,7 @@ Class manager_connexion{
   'mail'=>$connexion->getMail(),
   'mdp'=>$connexion->getMdp()));
   $donnee=$reponse->fetch();
+  var_dump($connexion);
 
   if ($donnee['mail'] == $connexion->getMail() && $donnee['mdp'] == $connexion->getMdp()){
 
@@ -21,10 +23,6 @@ Class manager_connexion{
           header('Location:index.html');
 
 
-        }
-        else {
-
-          header('Location:../moncompte.html');
         }
 
 
