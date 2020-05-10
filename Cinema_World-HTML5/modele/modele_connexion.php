@@ -33,5 +33,5 @@ public function getMail(){
 public function getMdp(){
   return $this->_mdp;
 }
-}
+} 
  ?>
