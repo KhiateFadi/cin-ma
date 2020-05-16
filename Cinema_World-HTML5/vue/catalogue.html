@@ -59,7 +59,7 @@
 										<li>
 											<h4>Toy Story 3</h4><img src="../images/ToyStory_film_Movies_movies_movie_7701 .png" alt="" />
 											<p>L'histoire de Toy Story plonge le spectateur dans la chambre d'Andy, un très jeune garçon qui lorsqu'il quitte la pièce ne se doute pas une seconde que ses jouets prennent vie. En effet, à l'instant où les jouets se retrouvent seuls, ceux-ci s'animent.</p>
- 											
+
 										</li>
 										<li>
 											<h4>La planete des singes</h4><img src="../images/riseoftheplanetoftheapes_movie_movies_movies_movie_7650.png" alt="" />
@@ -111,13 +111,13 @@
 			<div class="content">
 				<center>
 				<h3><span>Avis</span></h3>
-				<form id="contacts-form" action="../traitement/traitement_contact.php" method="post">
+				<form id="contacts-form" action="../traitement/traitement_avis.php" method="post">
 					<fieldset>
 					<div class="field"><label>Votre pseudo:</label><input type="text" name="pseudo" value=""/></div>
-					<div class="field"><label>Votre commentaire:</label><textarea cols="1" rows="1"></textarea></div>
+					<div class="field"><label>Votre commentaire:</label><textarea cols="1" name="commentaire" rows="1"></textarea></div>
 					<div class="wrapper">
 
-						<a href="#" class="link2" onclick="document.getElementById('contacts-form').submit()">
+						<a href="../traitement/traitement_avis.php" class="link2" onclick="document.getElementById('contacts-form').submit()">
 							<span>
 								<span>Envoyez votre commentaire</span>
 							</span>
